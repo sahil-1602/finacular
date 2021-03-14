@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from './Sidebar'
 import '../sass/_main.scss';
 import useToggleState from '../hooks/useToggleState'
+import Navbar from './Navbar';
 
 export default function Dashboard() {
     // const [isOpen, toggleChange] = useToggleState(true);
@@ -16,7 +17,7 @@ export default function Dashboard() {
             </div>
             <div className="dashboard--content" >
                 <div className="dashboard--content-nav">
-                    Navbar goes here
+                    <Navbar/>
                 </div>
                 <div className="dashboard--content-main">
                     <div className="dashboard--content-main-chart">
