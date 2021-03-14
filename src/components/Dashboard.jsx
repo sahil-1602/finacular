@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import '../sass/_main.scss';
 import useToggleState from '../hooks/useToggleState'
 import Navbar from './Navbar';
+import Ads from './Ads';
 
 export default function Dashboard() {
     // const [isOpen, toggleChange] = useToggleState(true);
@@ -24,7 +25,7 @@ export default function Dashboard() {
                         Main content goes
                     </div>
                     <div className="dashboard--content-main-info">
-                        More info....
+                        <Ads/>
                     </div>
                 </div>
             </div>

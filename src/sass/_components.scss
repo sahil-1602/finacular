@@ -1,6 +1,7 @@
 ////////////////////////////////
 //DASHBOARD
 .dashboard {
+  position: fixed;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -8,31 +9,30 @@
   &--sidebar {
     width: 15%;
     opacity: 1;
-    height: 95%;
+    height: 100%;
     transition: opacity 0.3s fadeInRight;
+    box-shadow: 0 .3rem .3rem rgba(#000, 0.4);
   }
 
   &--content {
     width: 85%;
-    height: 100%;
-    background-color: pink;
+    height: 95%;
     &-nav {
       height: 8%;
       background-color: #fff;
     }
     &-main {
       width: 100%;
-      height: 90%;
+      height: 100%;
       display: flex;
-      background-color: gray;
       justify-content: space-between;
       &-chart {
         width: 80%;
-        background-color: bisque;
       }
       &-info {
         width: 20%;
-        background-color: orange;
+        background-color: rgba($color-light-grey-1, 0.4);
+        box-shadow: 0 .3rem .3rem rgba(#000, 0.3);
       }
     }
   }
@@ -41,12 +41,12 @@
 ////////////////////////////////
 //SIDEBAR
 .sidebar {
-  background-color: $color-light-grey-1;
+  background-color: rgba($color-light-grey-1, 0.4);
   height: 95%;
   opacity: 1;
 
+
   &--head {
-    // display: flex;
     margin: 1.5rem .5rem;
     font-size: 1rem;
     text-align: center;
@@ -175,4 +175,60 @@
     background-color: #fff;
     color: $color-navyblue;
   }
+}
+
+
+
+////////////////////////////////
+//CARD
+
+.card{
+  width: 70%;
+  height: 20rem;
+  box-shadow: 0 .3rem .3rem rgba(#000, 0.4);
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgba($color-navyblue, 0.1);
+
+  &--img{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+
+  &--text{
+    font-size: 1.2rem;
+  }
+
+  &--btn{
+    margin-bottom: 1rem;
+    width: 100%;
+    a{
+      width: 100% !important;
+      font-size: 1rem !important;
+    }
+  }
+}
+
+////////////////////////////////
+//ADS SECTION
+.ads{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
