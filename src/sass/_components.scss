@@ -28,6 +28,7 @@
       justify-content: space-between;
       &-chart {
         width: 80%;
+        background-color: rgba($color-navyblue, 0.1);
       }
       &-info {
         width: 20%;
@@ -231,4 +232,88 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-top: 1px solid rgba(#000, 0.3);
+  border-radius: .5rem;
+}
+
+////////////////////////////////
+//CHART SECTION
+
+.section{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  &--chart{
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+  }
+  &--features{
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.features{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  grid-gap: 1rem;
+  &--3{
+    grid-column: 3 / -1;
+    grid-row: 1 / span 2;
+    background-color: #fff;
+  }
+}
+
+.feature{
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: .7rem;
+  display: flex;
+  flex-direction: column;
+  &--head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba($color-navyblue, 0.1);
+
+    &--icon{
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &--content{
+    display: flex;
+    justify-content: space-between;
+
+    &--input{
+      margin-top: 1rem;
+      &-text{
+        font-size: 1rem;
+      }
+      &-amt{
+        font-size: 1.3rem;
+        color: $color-navyblue;
+        background-color: rgba($color-navyblue, 0.1);
+        padding: .5rem;
+        border-radius: .5rem;
+        margin: .8rem;
+      }
+      &-time{
+        span{
+          color: rgba(#000, 0.5);
+        }
+      }
+    }
+
+    &--icon{
+      font-size: 5rem;
+      align-self: center;
+    }
+  }
 }
