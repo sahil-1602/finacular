@@ -2,6 +2,14 @@
   background-color: rgba($color-light-grey-1, 0.4);
   height: 95%;
   opacity: 1;
+  @media only screen and (max-width: $bp-med) {
+     height: 100%;
+     display: flex;
+  }
+  @media only screen and (max-width: $bp-small) {
+      height: 80%;
+      background-color: transparent;
+  }
 
 
   &--head {
@@ -9,6 +17,11 @@
     font-size: 1rem;
     text-align: center;
     border-bottom: 1px solid $color-dark-primary;
+    @media only screen and (max-width: $bp-med) {
+     margin: .5rem 1rem;
+     margin-right: 3rem;
+     border: none;
+    }
   }
   &--content {
     margin-top: 8rem;
@@ -17,6 +30,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-med) {
+     flex-direction: row;
+     margin-top: .5rem;
+     justify-content: space-between;
+     align-items: center;
+    }
   }
 
   &--items {
@@ -24,6 +44,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-med) {
+     flex-direction: row;
+     justify-content: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &--items-item {
@@ -36,6 +64,12 @@
     border-top-right-radius: .5rem;
     margin-bottom: .2rem;
     border-bottom-right-radius: .5rem;
+
+    @media only screen and (max-width: $bp-med) {
+      text-align: center;
+     width: 100%;
+     margin: .2rem 1rem;
+    }
 
     &:hover {
       background-color: $color-navyblue;
@@ -51,5 +85,14 @@
   &--footer{
     font-size: 1.6rem;
     margin-bottom: 2rem;
+    @media only screen and (max-width: $bp-med) {
+     font-size: 1rem;
+     margin-bottom: 0;
+     width: 10rem;
+     margin-left: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 }

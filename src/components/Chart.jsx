@@ -27,7 +27,7 @@ export default function Chart() {
     }
     return (
         <div className="chart">
-            <h3>Annual Projection</h3>
+            <h3 style={{marginTop: '3rem'}}>Annual Projection</h3>
             <Bar
                 data={chartData}
                 width={50}

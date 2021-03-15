@@ -3,17 +3,27 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  @media only screen and (max-width: $bp-medium) {
+     position: relative;
+     height: auto;
+  }
 
   &--sidebar {
     width: 15%;
     opacity: 1;
-    transition: opacity 0.3s fadeInRight;
-    box-shadow: 0 0 .3rem rgba(#000, 0.4);
+    @media only screen and (max-width: $bp-med) {
+      width: 75%;
+      height: 8%;
+      position: absolute;
+    }
   }
 
   &--content {
     width: 85%;
     height: 100%;
+    @media only screen and (max-width: $bp-med) {
+      width: 100%;
+    }
     &-nav {
       height: 8%;
       background-color: #fff;
@@ -23,14 +33,25 @@
       height: 98%;
       display: flex;
       justify-content: space-between;
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        height: 80%;
+      }
+
       &-chart {
         width: 80%;
         background-color: rgba($color-navyblue, 0.1);
+        @media only screen and (max-width: $bp-small) {
+          width: 100%;
+        }
       }
       &-info {
         width: 20%;
         background-color: rgba($color-light-grey-1, 0.4);
         box-shadow: 0 .3rem .3rem rgba(#000, 0.3);
+        @media only screen and (max-width: $bp-small) {
+          width: 100%;
+        }
       }
     }
   }
@@ -45,6 +66,20 @@
   align-items: center;
   border-top: 1px solid rgba(#000, 0.3);
   border-radius: .5rem;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: row;
+    padding: 3rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  @media only screen and (max-width: $bp-smaller) {
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+  }
 }
 
 .section{
@@ -69,10 +104,29 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-evenly;
   grid-gap: 1rem;
+
+  @media only screen and (max-width: $bp-smaller) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    margin-top: 2rem;
+  }
+  
   &--3{
     grid-column: 3 / -1;
     grid-row: 1 / span 2;
     background-color: #fff;
+    @media only screen and (max-width: $bp-smaller) {
+      grid-column: 2 / -1;
+      grid-row: 2 / span 2;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      grid-column: 1 / 1;
+      grid-row: 3 / span 1;
+  }
   }
 }
 
