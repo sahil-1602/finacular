@@ -12,11 +12,9 @@ export default function Ads() {
             text: "Track all your expenses on a daily basis"
         }
     ]
-    console.log(cards);
     return (
         <div className="ads">
             {cards.map((card, i) => {
-                console.log(card)
                 return <Card key={i} card={card} />    
             })}
         </div>

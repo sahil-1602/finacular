@@ -1,6 +1,5 @@
 import React from 'react';
-import {Bar, Line, Pie} from 'react-chartjs-2';
-import { BiRightTopArrowCircle } from 'react-icons/bi';
+import {Bar} from 'react-chartjs-2';
 
 export default function Chart() {
     const chartData = {
@@ -38,7 +37,7 @@ export default function Chart() {
                         position: 'right',
                     },
                     scales: {
-                        xAxes: [{
+                        dataset: [{
                             barPercentage: 0.6
                         }]
                     }   

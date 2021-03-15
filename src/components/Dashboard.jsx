@@ -1,6 +1,5 @@
 import React from 'react';
 import '../sass/_main.scss';
-import useToggleState from '../hooks/useToggleState'
 
 import Sidebar from './Sidebar'
 import Navbar from './Navbar';
@@ -8,10 +7,6 @@ import Ads from './Ads';
 import ChartSection from './ChartSection';
 
 export default function Dashboard() {
-    // const [isOpen, toggleChange] = useToggleState(true);
-    // const styles = {
-    //     content: !isOpen ? {width:'100%'}: null,
-    // }
     
     return (
         <div className="dashboard">

@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="nav">
             <div className="nav--settings"><MdSettings/></div>
             <div className="nav--notify"><MdAddAlert/></div>
-            <div className="nav-btn"><a className="btn" href="#"><MdTimeline/>Actions</a></div>
+            <div className="nav-btn"><a className="btn" href="www.google.com"><MdTimeline/>Actions</a></div>
         </div>
     )
 }

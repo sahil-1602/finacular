@@ -4,6 +4,15 @@
   padding: 1rem;
   padding-right: 6rem;
   align-items: center;
+  @media only screen and (max-width: $bp-med) {
+      padding-right: 4rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+      padding-right: 2rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+      padding-right: 0;
+  }
 
   &--settings{
     font-size: 2rem;
