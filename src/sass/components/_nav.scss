@@ -1,0 +1,38 @@
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  padding-right: 6rem;
+  align-items: center;
+
+  &--settings{
+    font-size: 2rem;
+    margin: 0 2rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover{
+      color: $color-navyblue;
+    }
+  }
+
+  &--notify{
+    margin: 0 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .2s;
+
+
+    &:hover{
+      color: $color-navyblue;
+    }
+  }
+
+  &-btn{
+    cursor: pointer;
+    margin-top: .4rem;
+    width: 12rem;
+    height: 3rem;
+    text-align: center;
+  }
+}

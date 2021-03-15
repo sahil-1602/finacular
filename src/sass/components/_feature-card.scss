@@ -1,0 +1,49 @@
+.feature{
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: .7rem;
+  display: flex;
+  flex-direction: column;
+  &--head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba($color-navyblue, 0.1);
+
+    &--icon{
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &--content{
+    display: flex;
+    justify-content: space-between;
+
+    &--input{
+      margin-top: 1rem;
+      &-text{
+        font-size: 1rem;
+      }
+      &-amt{
+        font-size: 1.3rem;
+        color: $color-navyblue;
+        background-color: rgba($color-navyblue, 0.1);
+        padding: .5rem;
+        border-radius: .5rem;
+        margin: .8rem;
+      }
+      &-time{
+        span{
+          color: rgba(#000, 0.5);
+        }
+      }
+    }
+
+    &--icon{
+      font-size: 5rem;
+      align-self: center;
+    }
+  }
+}

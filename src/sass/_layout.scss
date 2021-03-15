@@ -1,0 +1,83 @@
+.dashboard {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  &--sidebar {
+    width: 15%;
+    opacity: 1;
+    transition: opacity 0.3s fadeInRight;
+    box-shadow: 0 0 .3rem rgba(#000, 0.4);
+  }
+
+  &--content {
+    width: 85%;
+    height: 100%;
+    &-nav {
+      height: 8%;
+      background-color: #fff;
+    }
+    &-main {
+      width: 100%;
+      height: 98%;
+      display: flex;
+      justify-content: space-between;
+      &-chart {
+        width: 80%;
+        background-color: rgba($color-navyblue, 0.1);
+      }
+      &-info {
+        width: 20%;
+        background-color: rgba($color-light-grey-1, 0.4);
+        box-shadow: 0 .3rem .3rem rgba(#000, 0.3);
+      }
+    }
+  }
+}
+
+.ads{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(#000, 0.3);
+  border-radius: .5rem;
+}
+
+.section{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  &--chart{
+    width: 100%;
+    height: 44%;
+    // background-color: aqua;
+  }
+  &--features{
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.features{
+  // margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  grid-gap: 1rem;
+  &--3{
+    grid-column: 3 / -1;
+    grid-row: 1 / span 2;
+    background-color: #fff;
+  }
+}
+
+.chart{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}

@@ -1,0 +1,39 @@
+.ad{
+  width: 70%;
+  height: 20rem;
+  box-shadow: 0 0 .3rem rgba(#000, 0.4);
+  border-radius: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgba($color-navyblue, 0.1);
+
+  &--img{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+
+  &--text{
+    font-size: 1.2rem;
+  }
+
+  &--btn{
+    margin-bottom: 1rem;
+    width: 100%;
+    a{
+      width: 100% !important;
+      font-size: 1rem !important;
+    }
+  }
+}
