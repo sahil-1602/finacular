@@ -1,4 +1,5 @@
 import React from 'react';
+
 import '../sass/_main.scss';
 
 import Sidebar from './Sidebar'
@@ -10,7 +11,7 @@ export default function Dashboard() {
     
     return (
         <div className="dashboard">
-            <div className={'dashboard--sidebar'}>
+            <div className='dashboard--sidebar'>
                     <Sidebar />
             </div>
             <div className="dashboard--content" >

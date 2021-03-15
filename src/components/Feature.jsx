@@ -16,7 +16,10 @@ export default function Feature(props) {
                 <div className="feature--content--input">
                     <h3 className="feature--content--input-text">{input}</h3>
                     <h3 className="feature--content--input-amt">{value}</h3>
-                    <h4 className="feature--content--input-time">{duration} <span>{durationValue}</span></h4>
+                    <h4 className="feature--content--input-time">
+                        {duration} 
+                        <span>{durationValue}</span>
+                    </h4>
                 </div>
                 <div style={{color: color}} className="feature--content--icon">
                     {icon}

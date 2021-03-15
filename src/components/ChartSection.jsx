@@ -1,5 +1,5 @@
-import Chart from './Chart';
 import React from 'react';
+import Chart from './Chart';
 import Features from './Features';
 
 export default function ChartSection() {

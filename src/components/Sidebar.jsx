@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { FaAudible } from "react-icons/fa";
 import {MdAssessment} from "react-icons/md";
 import {MdReceipt} from "react-icons/md";
@@ -11,7 +12,10 @@ export default function Sidebar() {
     return (
         <div className="sidebar">
             <div className="sidebar--head">
-                <h1> <span><FaAudible/></span> Finacular</h1>
+                <h1>
+                    <span><FaAudible/></span> 
+                    Finacular
+                </h1>
             </div>
             <div className="sidebar--content">
                 <div className="sidebar--items">
