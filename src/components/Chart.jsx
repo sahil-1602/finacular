@@ -1,6 +1,5 @@
 import React, {useState, useContext, useEffect} from 'react';
 import {Bar} from 'react-chartjs-2';
-import { MdPowerSettingsNew } from 'react-icons/md';
 import {GrowthRateContext} from '../context/GrowthRate.context';
 
 export default function Chart() {
@@ -11,7 +10,7 @@ export default function Chart() {
     useEffect(() => {
         let results = [];
         for(let i=1; i<=10; i++){
-            let assetBalance = 1.25/(1 -(Math.pow((growthRate/100), i))) ;
+            let assetBalance = 1.25*((Math.pow(1 + (growthRate/100), i))) ;
             results.push(assetBalance*100);
         }
         setData((data) => {

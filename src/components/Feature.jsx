@@ -6,11 +6,11 @@ import {GrowthRateContext} from '../context/GrowthRate.context';
 
 export default function Feature(props) {
     const {title, input, value, duration, durationValue, icon, color, classes} = props.info;
-    const [data, updateData, reset] = useInputState();
+    const [data, updateData] = useInputState();
     const {updateRate} = useContext(GrowthRateContext);
 
     const handleClick = (e) => {
-        if(e.keyCode == 13){
+        if(e.keyCode === 13){
             updateRate(parseFloat(data))
         }
     }
@@ -36,7 +36,6 @@ export default function Feature(props) {
                         placeholder={value}
                     />
                     </div>
-                    {/* <h3 className="feature--content--input-amt">{value}</h3> */}
                     <h4 className="feature--content--input-time">
                         {duration} 
                         <span>{durationValue}</span>
@@ -68,7 +67,6 @@ export default function Feature(props) {
                         placeholder={value}
                         disabled="disabled"
                     />
-                    {/* <h3 className="feature--content--input-amt">{value}</h3> */}
                     <h4 className="feature--content--input-time">
                         {duration} 
                         <span>{durationValue}</span>

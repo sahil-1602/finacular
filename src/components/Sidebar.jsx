@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { FaAudible } from "react-icons/fa";
 import {MdAssessment} from "react-icons/md";
 import {MdReceipt} from "react-icons/md";
 import {MdTimeline} from "react-icons/md";
