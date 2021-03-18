@@ -13,8 +13,7 @@ export default function Sidebar() {
         <div className="sidebar">
             <div className="sidebar--head">
                 <h1>
-                    <span><FaAudible/></span> 
-                    Finacular
+                     Finacular
                 </h1>
             </div>
             <div className="sidebar--content">

@@ -3,28 +3,29 @@
   height: 95%;
   opacity: 1;
   @media only screen and (max-width: $bp-med) {
-     height: 100%;
-     display: flex;
+    height: 100%;
+    display: flex;
   }
   @media only screen and (max-width: $bp-small) {
-      height: 80%;
-      background-color: transparent;
+    height: 80%;
+    background-color: transparent;
   }
 
-
   &--head {
-    margin: 1.5rem .5rem;
     font-size: 1rem;
     text-align: center;
-    border-bottom: 1px solid $color-dark-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
     @media only screen and (max-width: $bp-med) {
-     margin: .5rem 1rem;
-     margin-right: 3rem;
-     border: none;
+      margin: 0.5rem 1rem;
+      margin-right: 3rem;
+      border: none;
     }
   }
   &--content {
-    margin-top: 8rem;
+    margin-top: 3rem;
     height: 85%;
     display: flex;
     flex-direction: column;
@@ -32,10 +33,10 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-med) {
-     flex-direction: row;
-     margin-top: .5rem;
-     justify-content: space-between;
-     align-items: center;
+      flex-direction: row;
+      margin-top: 0.5rem;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
@@ -46,8 +47,8 @@
     justify-content: center;
 
     @media only screen and (max-width: $bp-med) {
-     flex-direction: row;
-     justify-content: center;
+      flex-direction: row;
+      justify-content: center;
     }
     @media only screen and (max-width: $bp-small) {
       display: none;
@@ -61,14 +62,14 @@
     font-size: 1rem;
     transition: all 0.2s linear;
     cursor: pointer;
-    border-top-right-radius: .5rem;
-    margin-bottom: .2rem;
-    border-bottom-right-radius: .5rem;
+    border-top-right-radius: 0.5rem;
+    margin-bottom: 0.2rem;
+    border-bottom-right-radius: 0.5rem;
 
     @media only screen and (max-width: $bp-med) {
       text-align: center;
-     width: 100%;
-     margin: .2rem 1rem;
+      width: 100%;
+      margin: 0.2rem 1rem;
     }
 
     &:hover {
@@ -76,20 +77,19 @@
       color: $color-light-grey-1;
     }
 
-    &-active{
+    &-active {
       color: $color-light-grey-1;
       background-color: $color-navyblue;
     }
   }
 
-  &--footer{
+  &--footer {
     font-size: 1.6rem;
-    margin-bottom: 2rem;
     @media only screen and (max-width: $bp-med) {
-     font-size: 1rem;
-     margin-bottom: 0;
-     width: 10rem;
-     margin-left: 2rem;
+      font-size: 1rem;
+      margin-bottom: 0;
+      width: 10rem;
+      margin-left: 2rem;
     }
     @media only screen and (max-width: $bp-small) {
       display: none;

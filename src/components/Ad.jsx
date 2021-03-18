@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card(props) {
 
-    const {img, text} = props.card; 
+    const {img, text, btn} = props.card; 
 
     return (
         <div className="ad">
@@ -13,7 +13,7 @@ export default function Card(props) {
                 {text}
             </div>
             <div className="ad--btn">
-                <a className="btn" href="www.google.com">Learn Now</a>
+                <a className="" href="www.google.com">{btn}</a>
             </div>
         </div>
     )

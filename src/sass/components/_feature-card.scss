@@ -1,10 +1,10 @@
-.feature{
+.feature {
   background-color: #fff;
-  border-radius: .5rem;
-  padding: .7rem;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
   display: flex;
   flex-direction: column;
-  &--head{
+  &--head {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,39 +12,112 @@
     border-bottom: 1px solid rgba($color-navyblue, 0.1);
     color: #0abab5;
 
-    &--icon{
+    &--icon {
       font-size: 2rem;
       cursor: pointer;
     }
   }
 
-  &--content{
+  &--content {
     display: flex;
     justify-content: space-between;
 
-    &--input{
+    &--input {
       margin-top: 1rem;
-      &-text{
+      &-text {
         font-size: 1rem;
       }
-      &-amt{
-        font-size: 1.3rem;
-        color: $color-navyblue;
-        background-color: rgba($color-navyblue, 0.1);
-        padding: .5rem;
-        border-radius: .5rem;
-        margin: .8rem;
-      }
-      &-time{
-        span{
+      &-time {
+        span {
           color: rgba(#000, 0.5);
         }
       }
     }
 
-    &--icon{
-      font-size: 5rem;
+    &--icon {
+      font-size: 4rem;
+      margin-right: 1rem;
       align-self: center;
     }
+  }
+}
+
+.asset-balance {
+  font-size: 1.3rem;
+  color: $color-navyblue;
+  background-color: rgba($color-navyblue, 0.1);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.8rem;
+  border: none;
+  transition: all 0.2s;
+  &:focus {
+    border: $color-navyblue;
+  }
+  &::placeholder {
+    color: $color-navyblue;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.financial-ind,
+.major-investments {
+  font-size: 1.3rem;
+  color: $color-navyblue;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.8rem;
+  border: none;
+  transition: all 0.2s;
+  &:focus {
+    border: $color-navyblue;
+  }
+  &::placeholder {
+    color: $color-navyblue;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.growth-rate {
+  width: 60%;
+  font-size: 1.3rem;
+  color: $color-skyblue;
+  border: 1px solid $color-skyblue;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  text-align: center;
+  &:focus {
+    border: $color-skyblue;
+  }
+  &::placeholder {
+    color: $color-skyblue;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.growth-container {
+  width: 40%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avg-exp {
+  font-size: 1.3rem;
+  color: $color-skyblue;
+  border: 1px solid $color-skyblue;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.8rem;
+  border: none;
+  transition: all 0.2s;
+  input:focus {
+    border: $color-skyblue;
+  }
+  &::placeholder {
+    color: $color-skyblue;
+    opacity: 1; /* Firefox */
   }
 }

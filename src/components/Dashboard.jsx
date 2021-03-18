@@ -7,6 +7,8 @@ import Navbar from './Navbar';
 import Ads from './Ads';
 import ChartSection from './ChartSection';
 
+import {GrowthRateProvider} from '../context/GrowthRate.context';
+
 export default function Dashboard() {
     
     return (
@@ -20,7 +22,9 @@ export default function Dashboard() {
                 </div>
                 <div className="dashboard--content-main">
                     <div className="dashboard--content-main-chart">
-                        <ChartSection/>
+                        <GrowthRateProvider>
+                            <ChartSection/>
+                        </GrowthRateProvider>
                     </div>
                     <div className="dashboard--content-main-info">
                         <Ads/>

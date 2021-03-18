@@ -10,7 +10,9 @@ import { FaHotdog } from "react-icons/fa";
 
 
 export default function Features() {
-    const colors = ['#cd7f32', '#6f2da8', '#008080', '#e4d00a', '#6699cc'];
+    const navyBlue = "#000080";
+    const skyblue = "#31aaf5";
+
     const features = [
         {
             title: "Asset Balance",
@@ -19,7 +21,8 @@ export default function Features() {
             duration: "Last updated",
             durationValue: "3 Dec",
             icon: <FaCreativeCommonsSamplingPlus/>,
-            color: colors[0]
+            color: navyBlue,
+            classes: "asset-balance"
         },
         {
             title: "Growth Rate",
@@ -28,7 +31,8 @@ export default function Features() {
             duration: "Inflation",
             durationValue: "6%",
             icon: <BiChart/>,
-            color: colors[1]
+            color: skyblue,
+            classes: "growth-rate"
         },
         {
             title: "Major Investments",
@@ -37,7 +41,8 @@ export default function Features() {
             duration: "",
             durationValue: "",
             icon: <FaCoins/>,
-            color: colors[2]
+            color: navyBlue,
+            classes: "major-investments"
         }, 
         {
             title: "Financial Independence",
@@ -46,7 +51,8 @@ export default function Features() {
             duration: "Optimized",
             durationValue: "Yes No",
             icon: <HiGlobe/>,
-            color: colors[3]
+            color: navyBlue,
+            classes: "financial-ind"
         },
         {
             title: "Average Expenses",
@@ -55,13 +61,14 @@ export default function Features() {
             duration: "3 month average",
             durationValue: "₹ 40,000",
             icon: <FaHotdog/>,
-            color: colors[4]
+            color: skyblue,
+            classes: "avg-exp"
         },       
     ]
     return (
         <div className="features">
             {features.map((feature, i) => {
-                return <div key={i} className={`features--${++i}`}><Feature info={feature}/></div>
+                return <div key={i} className={`features--${++i} features--item`}><Feature info={feature}/></div>
             })}
         </div>
     )
